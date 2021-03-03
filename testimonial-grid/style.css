@@ -12,7 +12,6 @@ main{
     align-items: center;
     font-family: 'Barlow Semi Condensed', sans-serif;
     padding: 4.5rem;
-    height: 100%;
 }
 
 .grid-main {
@@ -32,15 +31,15 @@ main{
     align-items: center;
 }
 
-.light-text img {
-    width: 2.4rem;
+.user__img--light-text {
+    width: 2.5rem;
     border-radius: 50%;
     border: .2rem solid rgb(179, 178, 178);
     margin-right: 1rem;
 }
 
-.dark-text img {
-    width: 2.4rem;
+.user__img--dark-text {
+    width: 2.5rem;
     border-radius: 50%;
     border: .2rem solid rgb(59, 59, 59);
     margin-right: 1rem;
@@ -53,22 +52,23 @@ main{
 .grid5 {
     padding: 2.1rem;
     border-radius: .5rem;
+    box-shadow: 1px 1px 1px hsla(0, 0%, 10%, 0.1);
 }
 
-.light-text h2 {
+.light-text__name {
     color: #ffffff;
     font-weight: 700;
     font-size: 0.8rem;
     padding-bottom: .5rem;
 }
 
-.light-text h3 {
+.light-text__verified {
     color: rgba(255,255,255,0.5);
     font-weight: 400;
     font-size: 0.75rem;
 }
 
-.light-text p {
+.light-text__summary {
     color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
@@ -82,7 +82,7 @@ main{
     line-height: 1.25rem;
 }
 
-.dark-text h2 {
+.dark-text__name {
     color: #48556a;
     font-weight: 700;
     font-size: 0.8rem;
@@ -90,13 +90,13 @@ main{
 
 }
 
-.dark-text h3 {
+.dark-text__verified {
     color: rgba(72,85,106,0.5);
     font-weight: 400;
     font-size: 0.7rem;
 }
 
-.dark-text p {
+.dark-text__summary {
     color: #48556a;
     font-weight: 700;
     font-size: 1rem;
@@ -105,40 +105,39 @@ main{
 }
 
 .dark-text__quote {
-    color: rgba(72,85,106,0.5);
+    color: rgba(42, 50, 63, 0.6);
     font-size: 0.8rem;
     line-height: 1.25rem;
 }
 
 .grid1 {
     grid-area: grid1;
-    background-color: #7541c9;
+    background: linear-gradient(120deg, #8154c9, #7e57bb);
 }
 
 .grid2 {
     grid-area: grid2;
-    background-color: #49556b;
+    background: linear-gradient(120deg, #49556b, #586274);
 }
 
 .grid3 {
     grid-area: grid3;
-    background-color: #edf2f8;
+    background: linear-gradient(120deg, #edf2f8,  #f3f6f8);
 }
 
 .grid4 {
     grid-area: grid4;
-    background-color: #edf2f8;
+    background: linear-gradient(120deg, #edf2f8,  #f3f6f8);
 }
 
 .grid5 {
     grid-area: grid5;
-    background-color: #19212e;
+    background: linear-gradient(120deg, #19212e, #22252b);
 }
 
 footer {
-    position: relative;
-    margin-top: 2%;
-    height: 50;
+    position: fixed;
+    height: 2rem;
     width: 100%;
     text-align: center;
     font-size: 0.8em;
@@ -150,7 +149,7 @@ footer {
     main{
         display: flex;
         font-family: 'Barlow Semi Condensed', sans-serif;
-        padding: 3rem;
+        padding: 2rem;
     }
     
     .grid-main {
@@ -159,5 +158,27 @@ footer {
         height: 90%;
         min-width: 80%;
         max-width: 40rem;
+    }
+
+    footer {
+        position: relative;
+        padding: 2rem 0;
+}   
+
+@media only screen and (max-width: 400px) {
+
+    main{
+        display: flex;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        padding: 1rem;
+    }
+    
+    .grid-main {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        min-width: 80%;
+        max-width: 40rem;
+        padding-bottom: 1rem;
     }
 }   
