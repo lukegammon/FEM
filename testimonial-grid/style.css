@@ -12,6 +12,7 @@ main{
     align-items: center;
     font-family: 'Barlow Semi Condensed', sans-serif;
     height: 100vh;
+    background: #edf2f8;
 }
 
 .grid-main {
@@ -52,7 +53,7 @@ main{
 .grid5 {
     padding: 2.1rem;
     border-radius: .5rem;
-    box-shadow: 1px 1px 1px hsla(0, 0%, 10%, 0.1);
+    box-shadow: 1px 1px 4px hsla(0, 0%, 10%, 0.1);
 }
 
 .light-text__name {
@@ -112,7 +113,7 @@ main{
 
 .grid1 {
     grid-area: grid1;
-    background: linear-gradient(120deg, #8154c9, #7e57bb);
+    background: linear-gradient(120deg, #734cb3, #7e57bb);
 }
 
 .grid2 {
