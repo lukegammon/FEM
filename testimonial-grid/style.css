@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.grid1 {
+    background-color: #7541c9;
+    border-radius: .5rem;
+}
+
+.grid2 {
+    background-color: #49556b;
+}
+
+.grid3 {
+    background-color: #edf2f8;
+}
+
+.grid4 {
+    background-color: #edf2f8;
+}
+
+.grid5 {
+    background-color: #19212e;
+}
